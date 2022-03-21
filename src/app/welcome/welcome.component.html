@@ -1,0 +1,18 @@
+<div class="container p-5">
+    <h3 class="display-5 fw-bold"> Welcome To Quiz App</h3>
+    <p class="col-md-8 col-12-xs col-12-sm fs-6">This quiz will contain total 9 questions . Each questions holds 10 points</p>
+    <h4>Rules</h4>
+    <ol>
+        <li>Correct answer gives you 10 points</li>
+        <li>Wrong answer will decrease you pounts by 10</li>
+        <li>You will have 10 second time to anser each question</li>
+        <li>Refreshing the page will reset the quiz</li>
+    </ol>
+    <br>
+    <h3 style="font-family: 'Courier New', Courier, monospace; text-align: center;">All The Best</h3>
+    <div class="name col-md-4">
+        <label for="" >Enter Your Name</label><br>
+        <input type="text" class="form-control mt-2" [(ngModel)]="nameofUser">
+        <button class="mt-2 btn btn-primary" routerLink="/question" (click)="startQuiz()">Start the Quiz !!!</button>
+    </div>
+</div>
